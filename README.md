@@ -57,6 +57,7 @@ GitHub：http://github.com/EasyDarwin/EasyDarwin
 #### 2.2.1	概述
 EasyDSS是一款高性能流媒体服务器。集流媒体点播、转码、管理、直播、录像、检索、时移回看于一体，支持 RTMP 视频流。非开源、非免费，用于商用应该要收费。
 官网：http://www.easydss.com/
+注意如果登录EasyDSS主页，提示License过期，则重新从官网下载即可。
 
 #### 2.2.2	使用说明
 1.	官网下载相应的的压缩包（以windows版本为例），解压后启动EasyDSS.exe（Linux运行相应的start.bat文件）。若要修改配置，可在easydss.ini中修改。
