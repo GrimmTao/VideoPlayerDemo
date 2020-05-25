@@ -12,11 +12,11 @@
         <h3
           class="title"
           style="font-size:28px;line-height:normal;font-family:'Bahnschrift Bold Oblique', 'Bahnschrift Regular','Bahnschrift';font-weight:700;font-style:oblique;"
-        >申通地铁</h3>
+        >Video_Demo</h3>
         <h3
           class="title"
           style="font-size:20px;line-height:35px;font-family:'Arial Normal', 'Arial';font-weight:400;font-style:normal;"
-        >智能鹰眼系统</h3>
+        >视频播放器案例</h3>
       </div>
 
       <el-form-item prop="username">
