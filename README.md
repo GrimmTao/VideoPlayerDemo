@@ -168,14 +168,25 @@ npm install @liveqing/liveplayer
 
 GitHub：https://github.com/slacrey/vue-aliplayer
 
-### 3.6	html5_rtsp_player
+### 3.6	EasyPlayer.js
+
+EasyPlayer.js H5播放器，是一款能够同时支持HTTP、HTTP-FLV、HLS（m3u8）视频直播与视频点播等多种协议，支持H.264、H.265、AAC等多种音视频编码格式，支持mse、wasm等多种解码方式，支持Windows、Linux、Android、iOS全平台终端的H5播放器。
+
+但说实话，个人使用起来体验感并不是很好，不知道是否是自己不会用。
+
+这是EasyDSS系列工具的一个网页版播放器，GitHub: https://github.com/tsingsee/EasyPlayer.js
+GitHub中有关于如何在Vue中集成EasyPlayer的说明；
+
+EasyPlay还有桌面版和移动版的，GitHub: https://github.com/tsingsee/EasyPlayer
+
+### 3.7	html5_rtsp_player
 写该文档的时候，新发现的一个支持rtsp协议的前端播放技术，目前还没有尝试，有兴趣的话可以尝试一下。
 
 Npm安装：cnpm install html5_rtsp_player
 
 GitHub： https://github.com/Streamedian/html5_rtsp_player
 
-### 3.7	 JW Player
+### 3.8	 JW Player
 也是一款优秀的网页媒体播放器，但目前网上关于它的例程较少，未能尝试成功。
 
 官网：https://developer.jwplayer.com/jwplayer/docs
