@@ -1,27 +1,27 @@
 <template>
   <div class="video-container">
-    <div class="demo-video" id="videoElement"></div>
+    <div id="videoElement" class="demo-video" />
   </div>
 </template>
 <script>
 export default {
   data() {
-    return {};
+    return {}
   },
   mounted() {
     var videoObject = {
-      container: "demo-video", //容器的ID或className
-      variable: "player", //播放函数名称
+      container: 'demo-video', // 容器的ID或className
+      variable: 'player', // 播放函数名称
       live: true,
-      flashplayer: true, //如果强制使用flashplayer则设置成true
-      autoplay: false, //是否自动播放
-      poster: require("../../assets/CkplayerHome.png"), //封面图片
-      video: "rtmp://58.200.131.2:1935/livetv/hunantv" //湖南卫视
-    };
+      flashplayer: true, // 如果强制使用flashplayer则设置成true
+      autoplay: false, // 是否自动播放
+      poster: require('../../assets/CkplayerHome.png'), // 封面图片
+      video: 'rtmp://58.200.131.2:1935/livetv/hunantv' // 湖南卫视
+    }
     // 定义一个对象
-    var player = new ckplayer(videoObject);
+    var player = new ckplayer(videoObject)
   }
-};
+}
 </script>
 <style>
 .demo-video {

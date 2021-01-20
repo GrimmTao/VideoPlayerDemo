@@ -15,6 +15,7 @@
     "svgo": "svgo -f src/icons/svg --config=src/icons/svgo.yml"
   },
   "dependencies": {
+    "@easydarwin/easywasmplayer": "^4.0.8",
     "@liveqing/liveplayer": "^1.7.7",
     "axios": "0.18.1",
     "element-ui": "2.7.2",

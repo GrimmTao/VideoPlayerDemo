@@ -31,90 +31,103 @@ import Layout from '@/layout'
  * all roles can be accessed
  */
 export const constantRoutes = [{
-    path: '/login',
-    component: () => import('@/views/login/index'),
-    hidden: true
-  },
+  path: '/login',
+  component: () => import('@/views/login/index'),
+  hidden: true
+},
 
-  {
-    path: '/404',
-    component: () => import('@/views/404'),
-    hidden: true
-  },
+{
+  path: '/404',
+  component: () => import('@/views/404'),
+  hidden: true
+},
 
-  {
-    path: '/',
-    component: Layout,
-    redirect: '/vuevideoplayer',
-    children: [{
-      path: 'vuevideoplayer',
-      name: 'VueVideoPlayer',
-      component: () => import('@/views/videodemo/vuevideoplayer'),
-      meta: {
-        title: 'Vue-Video-Player',
-        icon: 'vuevideo'
-      }
-    }]
-  },
-  {
-    path: '/',
-    component: Layout,
-    children: [{
-      path: 'ckplayer',
-      name: 'Ckplayer',
-      component: () => import('@/views/videodemo/ckplayer'),
-      meta: {
-        title: 'Ckplayer',
-        icon: 'ckplayerlogo'
-      }
-    }]
-  },
-  {
-    path: '/',
-    component: Layout,
-    children: [{
-      path: 'flvjs',
-      name: 'Flvjs',
-      component: () => import('@/views/videodemo/flvjs'),
-      meta: {
-        title: 'Flvjs',
-        icon: 'bilibili'
-      }
-    }]
-  },
-  {
-    path: '/',
-    component: Layout,
-    children: [{
-      path: 'liveplayer',
-      name: 'LivePlayer',
-      component: () => import('@/views/videodemo/liveplayer'),
-      meta: {
-        title: 'LivePlayer',
-        icon: 'liveplayer'
-      }
-    }]
-  },
-  {
-    path: '/',
-    component: Layout,
-    children: [{
-      path: 'aliplayer',
-      name: 'AliPlayer',
-      component: () => import('@/views/videodemo/aliplayer'),
-      meta: {
-        title: 'AliPlayer',
-        icon: 'aliplayer'
-      }
-    }]
-  },
+{
+  path: '/',
+  component: Layout,
+  redirect: '/vuevideoplayer',
+  children: [{
+    path: 'vuevideoplayer',
+    name: 'VueVideoPlayer',
+    component: () => import('@/views/videodemo/vuevideoplayer'),
+    meta: {
+      title: 'Vue-Video-Player',
+      icon: 'vuevideo'
+    }
+  }]
+},
+{
+  path: '/',
+  component: Layout,
+  children: [{
+    path: 'ckplayer',
+    name: 'Ckplayer',
+    component: () => import('@/views/videodemo/ckplayer'),
+    meta: {
+      title: 'Ckplayer',
+      icon: 'ckplayerlogo'
+    }
+  }]
+},
+{
+  path: '/',
+  component: Layout,
+  children: [{
+    path: 'flvjs',
+    name: 'Flvjs',
+    component: () => import('@/views/videodemo/flvjs'),
+    meta: {
+      title: 'Flvjs',
+      icon: 'bilibili'
+    }
+  }]
+},
+{
+  path: '/',
+  component: Layout,
+  children: [{
+    path: 'liveplayer',
+    name: 'LivePlayer',
+    component: () => import('@/views/videodemo/liveplayer'),
+    meta: {
+      title: 'LivePlayer',
+      icon: 'liveplayer'
+    }
+  }]
+},
+{
+  path: '/',
+  component: Layout,
+  children: [{
+    path: 'aliplayer',
+    name: 'AliPlayer',
+    component: () => import('@/views/videodemo/aliplayer'),
+    meta: {
+      title: 'AliPlayer',
+      icon: 'aliplayer'
+    }
+  }]
+},
+{
+  path: '/',
+  component: Layout,
+  children: [{
+    path: 'easyplayer',
+    name: 'EasyPlayer',
+    component: () => import('@/views/videodemo/easyplayer'),
+    meta: {
+      title: 'EasyPlayer',
+      icon: 'easyplayer'
+    }
+  }]
+},
 
-  // 404 page must be placed at the end !!!
-  {
-    path: '*',
-    redirect: '/404',
-    hidden: true
-  }
+// 404 page must be placed at the end !!!
+{
+  path: '*',
+  redirect: '/404',
+  hidden: true
+}
 ]
 
 const createRouter = () => new Router({

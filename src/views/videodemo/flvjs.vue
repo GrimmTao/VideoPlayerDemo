@@ -1,38 +1,38 @@
 <template>
   <div class="video-container">
     <div>
-      <video class="centeredVideo" name="videoElement" ref="player" controls autoplay></video>
+      <video ref="player" class="centeredVideo" name="videoElement" controls autoplay />
     </div>
   </div>
 </template>
 <script>
-import flvjs from "flv.js";
+import flvjs from 'flv.js'
 export default {
   data() {
     return {
       flvPlayer: null
-    };
+    }
   },
   mounted() {
     if (flvjs.isSupported()) {
-      let video = this.$refs.player;
+      const video = this.$refs.player
       if (video) {
         this.flvPlayer = flvjs.createPlayer({
-          type: "flv",
+          type: 'flv',
           // isLive: true,
-          url: "https://mister-ben.github.io/videojs-flvjs/bbb.flv" //网络动画视频
-        });
-        this.flvPlayer.attachMediaElement(video);
+          url: 'https://mister-ben.github.io/videojs-flvjs/bbb.flv' // 网络动画视频
+        })
+        this.flvPlayer.attachMediaElement(video)
         try {
-          this.flvPlayer.load();
-          this.flvPlayer.play();
+          this.flvPlayer.load()
+          this.flvPlayer.play()
         } catch (error) {
-          console.log(error);
+          console.log(error)
         }
       }
     }
   }
-};
+}
 </script>
 <style>
 .centeredVideo {
